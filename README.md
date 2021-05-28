@@ -33,7 +33,7 @@ The system is built based on the causal graph depicting the physical interdepend
 ### the 2018 Hokkaido Earthquake
 
 <p align="center">
-    <img src="VBCI/images/hokkaido_roc.jpg" width="400"\>
+    <img src="images/hokkaido_roc.jpg" width="400"\>
 </p>
 
 We test the performance of our system on multiple earthquake events, including the 2018 Hokkaido earthquake, 2016 Central Italy earthquake, the 2019 Ridgecrest earthquake, and the 2020 Puerto Rico earthquake. We here show a comparison between our prediction results and existing USGS landslide model for landslide in Hokkaido. 
