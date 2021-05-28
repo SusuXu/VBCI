@@ -28,9 +28,6 @@ The system is built based on the causal graph depicting the physical interdepend
 </p>
 
 
-
-## Experimental Results
-
 ### the 2018 Hokkaido Earthquake
 
 <p align="center">
