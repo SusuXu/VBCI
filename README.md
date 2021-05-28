@@ -23,7 +23,7 @@ The results are automatically saved in the location specified by 'filename' in u
 
 The system is built based on the causal graph depicting the physical interdependencies among different seismic hazards, impacts, and Damage Proxy Maps (DPMs).
 <p align="center">
-    <img src="VBCI/images/causal_graph.png" width="500"\>
+    <img src="images/causal_graph.png" width="500"\>
 </p>
 
 
