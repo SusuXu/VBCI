@@ -39,3 +39,6 @@ We test the performance of our system on multiple earthquake events, including t
 
 ## Contact
 Please contact susu.xu@stonybrook.edu if you have any question on the codes.
+
+## Disclamer
+This project is supported by USGS, Stanford Unviersity, and Stony Brook University. 
