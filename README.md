@@ -75,7 +75,7 @@ We tested the performance of our system on multiple earthquake events, including
 
 Using the ROC curve, we show that our model significantly improves the current landslide and liquefaction models.
 <p align="center">
-    <img src="figures\fig2\fig2_full_auc_results_flattened.jpg" width="500"\>
+    <img src="figures\fig2\fig2_full_auc_results_flattened.jpg" width="750"\>
 </p>
 
 ## Repository Structure
