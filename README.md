@@ -5,7 +5,7 @@
 This GitHub repository contains the code, data, and figures for the Nature Communications paper [_Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery_](https://github.com/SusuXu/VBCI). If you have any questions, please contact [susu.xu@stonybrook.edu](mailto:susu.xu@stonybrook.edu).
 
 ## Installation
-This code depends on [MALTAB R2022a](https://uk.mathworks.com/), [QGIS 3.22.2-Białowieża](https://www.qgis.org/en/site/forusers/download.html), and any newer versions. The [MATLAB Mapping Toolbox](https://uk.mathworks.com/products/mapping.html) must be also installed to enable the data import and export of GeoTIFF files (*.tif).
+This code depends on [MALTAB R2022a](https://uk.mathworks.com/), [QGIS 3.22.2-Białowieża](https://www.qgis.org/en/site/forusers/download.html), or any newer versions. The [MATLAB Mapping Toolbox](https://uk.mathworks.com/products/mapping.html) must also be installed to enable the data import and export of GeoTIFF files (*.tif).
 
 ## Data
 Download and store the input raster TIF files for damage proxy map, building footprint, prior landslide model, and prior liquefaction model to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than damage proxy map, so it is necessary to discretize the prior estimations to make the map size the same as the damage proxy maps (though the resolution stays low). We studied the following four earthquake events:
