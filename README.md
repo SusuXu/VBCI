@@ -40,5 +40,223 @@ The system is built based on the causal graph depicting the physical interdepend
 
 We test the performance of our system on multiple earthquake events, including the 2018 Hokkaido earthquake, 2016 Central Italy earthquake, the 2019 Ridgecrest earthquake, and the 2020 Puerto Rico earthquake. We here show a comparison between our prediction results and existing USGS landslide model for landslide in Hokkaido. 
 
-### Acknowledgements
+## Repository Structure
+```
+├───code
+│   ├───method
+│   │       df.m
+│   │       f.m
+│   │       Loss.m
+│   │       parder.m
+│   │       pruning.m
+│   │       SVI.m
+│   │       Tfxn.m
+│   │       updating.m
+│   │
+│   └───performance
+│           binaryerror.m
+│           performance.m
+│           rocdetpr.m
+│
+├───data
+│   ├───2016_central_italy
+│   │   ├───building_damage_model
+│   │   │       2016_central_italy_building_damage_model.tif
+│   │   │
+│   │   ├───building_footprint
+│   │   │       2016_central_italy_building_footprint.zip
+│   │   │       2016_central_italy_building_footprint_rasterized.tif
+│   │   │
+│   │   ├───damage_proxy_map
+│   │   │       2016_central_italy_damage_proxy_map.tif
+│   │   │
+│   │   ├───ground_truth
+│   │   │       2016_central_italy_building_damage_ground_truth.zip
+│   │   │       2016_central_italy_building_damage_ground_truth_rasterized.tif
+│   │   │       2016_central_italy_landslide_ground_truth.zip
+│   │   │       2016_central_italy_landslide_ground_truth_rasterized.tif
+│   │   │
+│   │   ├───posterior_models
+│   │   │       2016_central_italy_posterior_landslide_model.tif
+│   │   │       2016_central_italy_posterior_liquefaction_model.tif
+│   │   │
+│   │   └───prior models
+│   │           2016_central_italy_prior_landslide_model.tif
+│   │           2016_central_italy_prior_liquefaction_model.tif
+│   │
+│   ├───2018_hokkaido_japan_30m
+│   │   ├───building_damage_model
+│   │   │       2018_hokkaido_japan_30m_building_damage_model.tif
+│   │   │
+│   │   ├───building_footprint
+│   │   │       2018_hokkaido_japan_30m_building_footprint.zip
+│   │   │       2018_hokkaido_japan_30m_building_footprint_rasterized.tif
+│   │   │
+│   │   ├───damage_proxy_map
+│   │   │       2018_hokkaido_japan_30m_damage_proxy_map.tif
+│   │   │
+│   │   ├───ground_truth
+│   │   │       2018_hokkaido_japan_30m_landslide_ground_truth.zip
+│   │   │       2018_hokkaido_japan_30m_landslide_ground_truth_rasterized.tif
+│   │   │       
+│   │   ├───posterior_models
+│   │   │       2018_hokkaido_japan_30m_posterior_landslide_model.tif
+│   │   │       2018_hokkaido_japan_30m_posterior_liquefaction_model.tif
+│   │   │
+│   │   └───prior models
+│   │           2018_hokkaido_japan_30m_prior_landslide_model.tif
+│   │           2018_hokkaido_japan_30m_prior_liquefaction_model.tif
+│   │
+│   ├───2018_hokkaido_japan_5m
+│   │   ├───building_damage_model
+│   │   │       2018_hokkaido_japan_5m_building_damage_model.tif
+│   │   │
+│   │   ├───building_footprint
+│   │   │       2018_hokkaido_japan_5m_building_footprint.zip
+│   │   │       2018_hokkaido_japan_5m_building_footprint_rasterized.tif
+│   │   │
+│   │   ├───damage_proxy_map
+│   │   │       2018_hokkaido_japan_5m_damage_proxy_map.tif
+│   │   │
+│   │   ├───ground_truth
+│   │   │       2018_hokkaido_japan_5m_landslide_ground_truth.zip
+│   │   │       2018_hokkaido_japan_5m_landslide_ground_truth_rasterized.tif
+│   │   │
+│   │   ├───posterior_models
+│   │   │       2018_hokkaido_japan_5m_posterior_landslide_model.tif
+│   │   │       2018_hokkaido_japan_5m_posterior_liquefaction_model.tif
+│   │   │
+│   │   └───prior models
+│   │           2018_hokkaido_japan_5m_prior_landslide_model.tif
+│   │           2018_hokkaido_japan_5m_prior_liquefaction_model.tif
+│   │
+│   ├───2019_ridgecrest
+│   │   ├───building_damage_model
+│   │   │       2019_ridgecrest_building_damage_model.tif
+│   │   │
+│   │   ├───building_footprint
+│   │   │       2019_ridgecrest_building_footprint.zip
+│   │   │       2019_ridgecrest_building_footprint_rasterized.tif
+│   │   │
+│   │   ├───damage_proxy_map
+│   │   │       2019_ridgecrest_damage_proxy_map.tif
+│   │   │
+│   │   ├───ground_truth
+│   │   │       2019_ridgecrest_building_damage_ground_truth.zip
+│   │   │       2019_ridgecrest_building_damage_ground_truth_rasterized.tif
+│   │   │       2019_ridgecrest_landslide_ground_truth.zip
+│   │   │       2019_ridgecrest_landslide_ground_truth_rasterized.tif
+│   │   │       2019_ridgecrest_liquefaction_ground_truth.zip
+│   │   │       2019_ridgecrest_liquefaction_ground_truth_rasterized.tif
+│   │   │
+│   │   ├───posterior_models
+│   │   │       2019_ridgecrest_posterior_landslide_model.tif
+│   │   │       2019_ridgecrest_posterior_liquefaction_model.tif
+│   │   │
+│   │   └───prior models
+│   │           2019_ridgecrest_prior_landslide_model.tif
+│   │           2019_ridgecrest_prior_liquefaction_model.tif
+│   │
+│   └───2020_puerto_rico
+│       ├───building_damage_model
+│       │       2020_puerto_rico_building_damage_model.tif
+│       │
+│       ├───building_footprint
+│       │       2020_puerto_rico_building_footprint.zip
+│       │       2020_puerto_rico_building_footprint_rasterized.tif
+│       │
+│       ├───damage_proxy_map
+│       │       2020_puerto_rico_damage_proxy_map.tif
+│       │
+│       ├───ground_truth
+│       │       2020_puerto_rico_building_damage_ground_truth.zip
+│       │       2020_puerto_rico_building_damage_ground_truth_rasterized.tif
+│       │       2020_puerto_rico_landslide_ground_truth_part1.zip
+│       │       2020_puerto_rico_landslide_ground_truth_part2.zip
+│       │       2020_puerto_rico_landslide_ground_truth_part3.zip
+│       │       2020_puerto_rico_landslide_ground_truth_rasterized.tif
+│       │       2020_puerto_rico_liquefaction_ground_truth.zip
+│       │       2020_puerto_rico_liquefaction_ground_truth_rasterized.tif
+│       │
+│       ├───posterior_models
+│       │       2020_puerto_rico_posterior_landslide_model.tif
+│       │       2020_puerto_rico_posterior_liquefaction_model.tif
+│       │
+│       └───prior models
+│               2020_puerto_rico_prior_landslide_model.tif
+│               2020_puerto_rico_prior_liquefaction_model.tif
+│
+└───figures
+    │   causal_graph.png
+    │   hokkaido_roc.jpg
+    │
+    ├───fig1
+    │       fig1_causal_graph_editable.pptx
+    │       fig1_causal_graph_flattened.pdf
+    │
+    ├───fig2
+    │   │   fig2_full_auc_results_editable.pdf
+    │   │   fig2_full_auc_results_flattened.pdf
+    │   │
+    │   └───subplots
+    │           fig2a.pdf
+    │           fig2b.pdf
+    │           fig2c.pdf
+    │           fig2d.pdf
+    │           fig2e.pdf
+    │           fig2f.pdf
+    │           fig2g.pdf
+    │           fig2h.pdf
+    │           fig2i.pdf
+    │
+    ├───fig3
+    │       fig3_puertorico_editable.pdf
+    │       fig3_puertorico_flattened.pdf
+    │
+    ├───fig4
+    │       fig4_japan30m_editable.pdf
+    │       fig4_japan30m_flattened.pdf
+    │
+    ├───fig5
+    │   │   fig5_editable.pdf
+    │   │   fig5_flattened.pdf
+    │   │
+    │   └───subplots
+    │           fig5a_fig5b_weights_editable.pdf
+    │           fig5a_fig5b_weights_editable.pptx
+    │           fig5c.pdf
+    │           fig5d.pdf
+    │
+    ├───supplementaryfig1
+    │       supplementaryfig1_centralitaly_editable.pdf
+    │       supplementaryfig1_centralitaly_flattened.pdf
+    │
+    ├───supplementaryfig2
+    │       supplementaryfig2_ridgecrest_editable.pdf
+    │       supplementaryfig2_ridgecrest_flattened.pdf
+    │
+    ├───supplementaryfig3
+    │       supplementaryfig3_japan5m_editable.pdf
+    │       supplementaryfig3_japan5m_flattened.pdf
+    │
+    ├───supplementaryfig4
+    │   │   supplementaryfig4_editable.pdf
+    │   │   supplementaryfig4_flattened.pdf
+    │   │
+    │   └───subplots
+    │           supplementaryfig4a_fig4b_weights_editable.pdf
+    │           supplementaryfig4a_fig4b_weights_editable.pptx
+    │           supplementaryfig4c.pdf
+    │           supplementaryfig4d.pdf
+    │
+    └───supplementaryfig5
+        │   supplementaryfig5_editable.pdf
+        │   supplementaryfig5_flattened.pdf
+        │
+        └───subplots
+                supplementaryfig5a.pdf
+                supplementaryfig5b.pdf
+```
+
+## Acknowledgements
 This project is supported by USGS, Stony Brook University, and Stanford Unviersity. 
