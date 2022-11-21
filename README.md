@@ -8,7 +8,28 @@ This GitHub repository contains the code, data, and figures for the Nature Commu
 This code depends on MALTAB R2022a, QGIS 3.22.2-Białowieża, and any newer versions.
 
 ## Data
-To get started, cd into the directory. Download and store the raster TIF files for damage proxy map, building footprint, prior landslide model, and prior liquefaction model to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than damage proxy map, so it is necessary to discretize the prior estimations to make the map size the same as the damage proxy maps (though the resolution stays low).
+Download and store the input raster TIF files for damage proxy map, building footprint, prior landslide model, and prior liquefaction model to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than damage proxy map, so it is necessary to discretize the prior estimations to make the map size the same as the damage proxy maps (though the resolution stays low). We studied the following four earthquake events:
+- Earthquake Event
+  - 2016_central_italy
+  - 2018_hokkaido_japan_5m
+  - 2018_hokkaido_japan_30m (same as the previous one but with different resolution) 
+  - 2019_ridgecrest
+  - 2020_puerto_rico
+
+
+
+We have made all the post-processed inputs and outputs available inside the `data` folder. Each earthquake event has the following sub-folders:
+- Input Data
+  - `data/<event>/prior models`
+  - `data/<event>/damage_proxy_map`
+  - `data/<event>/building_footprint`
+- Output Data
+  - `data/<event>/posterior_models`
+  - `data/<event>/building_damage_model`
+- Validation or Performance Assessment
+  - `data/<event>/ground_truth`
+
+
 
 
 ## Code
