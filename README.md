@@ -65,13 +65,18 @@ We tested the performance of our system on multiple earthquake events, including
 
 | Events | Map Visualization |
 | :---         |     :---:      |
-| 2016 Central Italy earthquake (30m-resolution)   | ![](figures/hokkaido_roc.jpg)     |
-| 2018 Hokkaido earthquake (30m-resolution)    | git diff       |
-| 2018 Hokkaido earthquake (5m-resolution)     | git diff       |
-| 2019 Ridgecrest earthquake (30m-resolution)   | git status     |
-| 2020 Puerto Rico earthquake (30m-resolution)     | git diff       |
+| 2016 Central Italy earthquake (30m-resolution)   | ![](figures\supplementaryfig1\supplementaryfig1_centralitaly_flattened.jpg)     |
+| 2018 Hokkaido earthquake (30m-resolution)    | ![](figures\fig4\fig4_japan30m_flattened.jpg)       |
+| 2018 Hokkaido earthquake (5m-resolution)     | ![](figures\supplementaryfig3\supplementaryfig3_japan5m_flattened.jpg)       |
+| 2019 Ridgecrest earthquake (30m-resolution)   | ![](figures\supplementaryfig2\supplementaryfig2_ridgecrest_flattened.jpg)     |
+| 2020 Puerto Rico earthquake (30m-resolution)     | ![](figures\fig3\fig3_puertorico_flattened.jpg)       |
 
 ## Performance
+
+Using the ROC curve, we show that our model significantly improves the current landslide and liquefaction models.
+<p align="center">
+    <img src="figures\fig2\fig2_full_auc_results_flattened.jpg" width="500"\>
+</p>
 
 ## Repository Structure
 ```
