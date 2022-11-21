@@ -101,6 +101,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │
 │   └───performance
 │           binaryerror.m
+│           cel.m
 │           performance.m
 │           rocdetpr.m
 │
@@ -112,9 +113,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   ├───building_footprint
 │   │   │       2016_central_italy_building_footprint.zip
 │   │   │       2016_central_italy_building_footprint_rasterized.tif
-│   │   │
-│   │   ├───damage_proxy_map
-│   │   │       2016_central_italy_damage_proxy_map.tif
 │   │   │
 │   │   ├───ground_truth
 │   │   │       2016_central_italy_building_damage_ground_truth.zip
@@ -138,9 +136,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2018_hokkaido_japan_30m_building_footprint.zip
 │   │   │       2018_hokkaido_japan_30m_building_footprint_rasterized.tif
 │   │   │
-│   │   ├───damage_proxy_map
-│   │   │       2018_hokkaido_japan_30m_damage_proxy_map.tif
-│   │   │
 │   │   ├───ground_truth
 │   │   │       2018_hokkaido_japan_30m_landslide_ground_truth.zip
 │   │   │       2018_hokkaido_japan_30m_landslide_ground_truth_rasterized.tif
@@ -161,9 +156,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2018_hokkaido_japan_5m_building_footprint.zip
 │   │   │       2018_hokkaido_japan_5m_building_footprint_rasterized.tif
 │   │   │
-│   │   ├───damage_proxy_map
-│   │   │       2018_hokkaido_japan_5m_damage_proxy_map.tif
-│   │   │
 │   │   ├───ground_truth
 │   │   │       2018_hokkaido_japan_5m_landslide_ground_truth.zip
 │   │   │       2018_hokkaido_japan_5m_landslide_ground_truth_rasterized.tif
@@ -183,9 +175,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   ├───building_footprint
 │   │   │       2019_ridgecrest_building_footprint.zip
 │   │   │       2019_ridgecrest_building_footprint_rasterized.tif
-│   │   │
-│   │   ├───damage_proxy_map
-│   │   │       2019_ridgecrest_damage_proxy_map.tif
 │   │   │
 │   │   ├───ground_truth
 │   │   │       2019_ridgecrest_building_damage_ground_truth.zip
