@@ -52,7 +52,7 @@ The main codes located under the directory of method.
 * `performance.m` refers to the evaluation metric, including true positive rate, false positive rate, ROC, DET, PR, and AUC calculation. 
 
 ## Results
-The results are automatically saved in the location specified by 'filename' in updating.m. final_QLS, final_QLF are the landslide, liquefaction estimation by our model, respectively. opt_QBD is the building damage (BD) estiamtion by our model. local is the finally updated pruning strategy, local = 1,3 represent only LS or LS+BD, local = 2,4 refer to only LF or LF+BD, local = 5 refers to LS+LF, local=6 refers to LS+LF+BD. If you are very sure about the mutual exclusive between LS and LF at some locations, you can incorporate that in the original pruning strategies (prune.m).
+The results are automatically saved in the location specified by 'filename' in `updating.m`. `final_QLS`, `final_QLF` are the landslide, liquefaction estimation by our model, respectively. `opt_QBD` is the building damage (BD) estiamtion by our model. `local` is the finally updated pruning strategy, `local = 1,3` represent only LS or LS+BD, `local = 2,4` refer to only LF or LF+BD, `local = 5` refers to LS+LF, `local=6` refers to LS+LF+BD. If you are very sure about the mutual exclusive between LS and LF at some locations, you can incorporate that in the original pruning strategies (`prune.m`).
 
 The system is built based on the causal graph depicting the physical interdependencies among different seismic hazards, impacts, and Damage Proxy Maps (DPMs).
 <p align="center">
