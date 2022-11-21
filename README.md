@@ -10,13 +10,11 @@ This code depends on MALTAB R2022a, QGIS 3.22.2-Białowieża, and any newer vers
 ## Data
 Download and store the input raster TIF files for damage proxy map, building footprint, prior landslide model, and prior liquefaction model to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than damage proxy map, so it is necessary to discretize the prior estimations to make the map size the same as the damage proxy maps (though the resolution stays low). We studied the following four earthquake events:
 - Earthquake Event
-  - 2016_central_italy
-  - 2018_hokkaido_japan_5m
-  - 2018_hokkaido_japan_30m (same as the previous one but with different resolution) 
-  - 2019_ridgecrest
-  - 2020_puerto_rico
-
-
+  - 2016_central_italy, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us10006g7d)
+  - 2018_hokkaido_japan_5m, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us2000h8ty/)
+  - 2018_hokkaido_japan_30m, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us2000h8ty/), (same as the previous one but with different resolution)
+  - 2019_ridgecrest, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/ci38457511)
+  - 2020_puerto_rico, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us70006vll)
 
 We have made all the post-processed inputs and outputs available inside the `data` folder. Each earthquake event has the following sub-folders:
 - Input Data
