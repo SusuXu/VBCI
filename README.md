@@ -24,14 +24,14 @@ The results are automatically saved in the location specified by 'filename' in u
 
 The system is built based on the causal graph depicting the physical interdependencies among different seismic hazards, impacts, and Damage Proxy Maps (DPMs).
 <p align="center">
-    <img src="images/causal_graph.png" width="500"\>
+    <img src="figures/causal_graph.png" width="500"\>
 </p>
 
 
 ### the 2018 Hokkaido Earthquake
 
 <p align="center">
-    <img src="images/hokkaido_roc.jpg" width="400"\>
+    <img src="figures/hokkaido_roc.jpg" width="400"\>
 </p>
 
 We test the performance of our system on multiple earthquake events, including the 2018 Hokkaido earthquake, 2016 Central Italy earthquake, the 2019 Ridgecrest earthquake, and the 2020 Puerto Rico earthquake. We here show a comparison between our prediction results and existing USGS landslide model for landslide in Hokkaido. 
