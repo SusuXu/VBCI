@@ -312,8 +312,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 ```
 
 ## Acknowledgements
-Any use of trade, firm, or product names is for descriptive purposes only and does not
-697 imply endorsement by the U.S. Government. S.X. was supported by USGS Earthquake Hazards Program 698 G22AP00032. J.D. was supported by the Stanford Knight-Hennessy Scholars Program. This project is supported by U.S. Geological Survey, Stony Brook University, and Stanford Unviersity.  
+Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government. S.X. was supported by USGS Earthquake Hazards Program G22AP00032 and Research Foundations at Stony Brook University. J.D. was supported by the Stanford Knight-Hennessy Scholars Program. J.D. was affiliated with the Department of Civil and Environmental Engineering at Stanford University at the time of work and is currently affiliated with the UKRI CDT in the Application of Artificial Intelligence to the study of Environmental Risks (AI4ER) at the University of Cambridge. The authors would like to thank Dr. Sang-Ho Yun, Dr. Eric Fielding, and NASA ARIA team for providing their Damage Proxy Maps products. The authors would like to thank Dr. Kate Allstadt, Dr. Eric Thompson, Dr. Kishor Jaiswal, Dr. Sabine Loos, and Davis Engler from USGS for providing their prior geospatial models and valuable suggestions.
 
 ## Want to cite this GitHub repository?
 Feel free to use our recommended BibTex-formatted entry below.
