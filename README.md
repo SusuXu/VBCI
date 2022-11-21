@@ -126,7 +126,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2016_central_italy_posterior_landslide_model.tif
 │   │   │       2016_central_italy_posterior_liquefaction_model.tif
 │   │   │
-│   │   └───prior models
+│   │   └───prior_models
 │   │           2016_central_italy_prior_landslide_model.tif
 │   │           2016_central_italy_prior_liquefaction_model.tif
 │   │
@@ -144,12 +144,12 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   ├───ground_truth
 │   │   │       2018_hokkaido_japan_30m_landslide_ground_truth.zip
 │   │   │       2018_hokkaido_japan_30m_landslide_ground_truth_rasterized.tif
-│   │   │       
+│   │   │
 │   │   ├───posterior_models
 │   │   │       2018_hokkaido_japan_30m_posterior_landslide_model.tif
 │   │   │       2018_hokkaido_japan_30m_posterior_liquefaction_model.tif
 │   │   │
-│   │   └───prior models
+│   │   └───prior_models
 │   │           2018_hokkaido_japan_30m_prior_landslide_model.tif
 │   │           2018_hokkaido_japan_30m_prior_liquefaction_model.tif
 │   │
@@ -172,7 +172,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2018_hokkaido_japan_5m_posterior_landslide_model.tif
 │   │   │       2018_hokkaido_japan_5m_posterior_liquefaction_model.tif
 │   │   │
-│   │   └───prior models
+│   │   └───prior_models
 │   │           2018_hokkaido_japan_5m_prior_landslide_model.tif
 │   │           2018_hokkaido_japan_5m_prior_liquefaction_model.tif
 │   │
@@ -199,7 +199,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2019_ridgecrest_posterior_landslide_model.tif
 │   │   │       2019_ridgecrest_posterior_liquefaction_model.tif
 │   │   │
-│   │   └───prior models
+│   │   └───prior_models
 │   │           2019_ridgecrest_prior_landslide_model.tif
 │   │           2019_ridgecrest_prior_liquefaction_model.tif
 │   │
@@ -228,20 +228,19 @@ Using the ROC curve, we show that our model significantly improves the current l
 │       │       2020_puerto_rico_posterior_landslide_model.tif
 │       │       2020_puerto_rico_posterior_liquefaction_model.tif
 │       │
-│       └───prior models
+│       └───prior_models
 │               2020_puerto_rico_prior_landslide_model.tif
 │               2020_puerto_rico_prior_liquefaction_model.tif
 │
 └───figures
-    │   causal_graph.png
-    │   hokkaido_roc.jpg
-    │
     ├───fig1
     │       fig1_causal_graph_editable.pptx
+    │       fig1_causal_graph_flattened.jpg
     │       fig1_causal_graph_flattened.pdf
     │
     ├───fig2
     │   │   fig2_full_auc_results_editable.pdf
+    │   │   fig2_full_auc_results_flattened.jpg
     │   │   fig2_full_auc_results_flattened.pdf
     │   │
     │   └───subplots
@@ -257,14 +256,17 @@ Using the ROC curve, we show that our model significantly improves the current l
     │
     ├───fig3
     │       fig3_puertorico_editable.pdf
+    │       fig3_puertorico_flattened.jpg
     │       fig3_puertorico_flattened.pdf
     │
     ├───fig4
     │       fig4_japan30m_editable.pdf
+    │       fig4_japan30m_flattened.jpg
     │       fig4_japan30m_flattened.pdf
     │
     ├───fig5
     │   │   fig5_editable.pdf
+    │   │   fig5_flattened.jpg
     │   │   fig5_flattened.pdf
     │   │
     │   └───subplots
@@ -275,18 +277,22 @@ Using the ROC curve, we show that our model significantly improves the current l
     │
     ├───supplementaryfig1
     │       supplementaryfig1_centralitaly_editable.pdf
+    │       supplementaryfig1_centralitaly_flattened.jpg
     │       supplementaryfig1_centralitaly_flattened.pdf
     │
     ├───supplementaryfig2
     │       supplementaryfig2_ridgecrest_editable.pdf
+    │       supplementaryfig2_ridgecrest_flattened.jpg
     │       supplementaryfig2_ridgecrest_flattened.pdf
     │
     ├───supplementaryfig3
     │       supplementaryfig3_japan5m_editable.pdf
+    │       supplementaryfig3_japan5m_flattened.jpg
     │       supplementaryfig3_japan5m_flattened.pdf
     │
     ├───supplementaryfig4
     │   │   supplementaryfig4_editable.pdf
+    │   │   supplementaryfig4_flattened.jpg
     │   │   supplementaryfig4_flattened.pdf
     │   │
     │   └───subplots
@@ -297,6 +303,7 @@ Using the ROC curve, we show that our model significantly improves the current l
     │
     └───supplementaryfig5
         │   supplementaryfig5_editable.pdf
+        │   supplementaryfig5_flattened.jpg
         │   supplementaryfig5_flattened.pdf
         │
         └───subplots
