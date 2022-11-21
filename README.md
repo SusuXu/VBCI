@@ -71,6 +71,8 @@ We tested the performance of our system on multiple earthquake events, including
 | 2019 Ridgecrest earthquake (30m-resolution)   | git status     |
 | 2020 Puerto Rico earthquake (30m-resolution)     | git diff       |
 
+## Performance
+
 ## Repository Structure
 ```
 ├───code
