@@ -314,3 +314,17 @@ Using the ROC curve, we show that our model significantly improves the current l
 ## Acknowledgements
 Any use of trade, firm, or product names is for descriptive purposes only and does not
 697 imply endorsement by the U.S. Government. S.X. was supported by USGS Earthquake Hazards Program 698 G22AP00032. J.D. was supported by the Stanford Knight-Hennessy Scholars Program. This project is supported by U.S. Geological Survey, Stony Brook University, and Stanford Unviersity.  
+
+## Want to cite this GitHub repository?
+Feel free to use our recommended BibTex-formatted entry below.
+```
+@misc{xus2022,
+  author = {Susu Xu, Joshua Dimasaka},
+  title = {Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://doi.org/10.5281/zenodo.7319726}},
+  commit = {4f57d6a0e4c030202a07a60bc1bb1ed1544bf679}
+}
+```
