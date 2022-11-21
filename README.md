@@ -65,11 +65,11 @@ We tested the performance of our system on multiple earthquake events, including
 
 | Events | Map Visualization |
 | :---         |     :---:      |
-| 2016 Central Italy earthquake (30m-resolution)   | ![](figures\supplementaryfig1\supplementaryfig1_centralitaly_flattened.jpg)     |
-| 2018 Hokkaido earthquake (30m-resolution)    | ![](figures\fig4\fig4_japan30m_flattened.jpg)       |
-| 2018 Hokkaido earthquake (5m-resolution)     | ![](figures\supplementaryfig3\supplementaryfig3_japan5m_flattened.jpg)       |
-| 2019 Ridgecrest earthquake (30m-resolution)   | ![](figures\supplementaryfig2\supplementaryfig2_ridgecrest_flattened.jpg)     |
-| 2020 Puerto Rico earthquake (30m-resolution)     | ![](figures\fig3\fig3_puertorico_flattened.jpg)       |
+| 2016 Central Italy earthquake (30m-resolution)   | ![](figures/supplementaryfig1/supplementaryfig1_centralitaly_flattened.jpg)     |
+| 2018 Hokkaido earthquake (30m-resolution)    | ![](figures/fig4/fig4_japan30m_flattened.jpg)       |
+| 2018 Hokkaido earthquake (5m-resolution)     | ![](figures/supplementaryfig3/supplementaryfig3_japan5m_flattened.jpg)       |
+| 2019 Ridgecrest earthquake (30m-resolution)   | ![](figures/supplementaryfig2/supplementaryfig2_ridgecrest_flattened.jpg)     |
+| 2020 Puerto Rico earthquake (30m-resolution)     | ![](figures/fig3/fig3_puertorico_flattened.jpg)       |
 
 ## Performance
 
