@@ -16,7 +16,7 @@ Download and store the input raster TIF files for damage proxy map, building foo
   - 2019_ridgecrest, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/ci38457511)
   - 2020_puerto_rico, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us70006vll)
 
-We have made all the post-processed inputs and outputs available inside the `data` folder. Each earthquake event has the following datasets:
+We have made all the post-processed inputs and outputs available inside the `data` folder. Supplementary datasets are provided below if anyone would like to visualize the vector representation of building footprint and ground truth datasets. The MATLAB codes will need the TIF files only, which are results of the post-processing of supplementary datasets. Each earthquake event has the following datasets:
 - Input Data
   - PLS: `data/<event>/prior_models/<event>_prior_landslide_model.tif`
   - PLF: `data/<event>/prior_models/<event>_prior_liquefaction_model.tif`
