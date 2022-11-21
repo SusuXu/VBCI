@@ -23,9 +23,9 @@ We have made all the post-processed inputs and outputs available inside the `dat
   - BD: `data/<event>/building_footprint/<event>_building_footprint_rasterized.tif`
   - DPM: `data/<event>/damage_proxy_map/<event>_damage_proxy_map.tif`
 - Output Data
-  - QLS: `data/<event>/posterior_models`
-  - QLS: `data/<event>/posterior_models`
-  - QBD: `data/<event>/building_damage_model`
+  - QLS: `data/<event>/posterior_models/<event>_posterior_landslide_model.tif`
+  - QLS: `data/<event>/posterior_models/<event>_posterior_liquefaction_model.tif`
+  - QBD: `data/<event>/building_damage_model/<event>_building_damage_model.tif`
 - Validation or Performance Assessment
   - GTLS: `data/<event>/ground_truth/<event>_landslide_ground_truth_rasterized.tif`
   - GTLF: `data/<event>/ground_truth/<event>_liquefaction_ground_truth_rasterized.tif`
