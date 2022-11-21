@@ -32,11 +32,6 @@ We have made all the post-processed inputs and outputs available inside the `dat
   - GTBD: `data/<event>/ground_truth/<event>_building_damage_ground_truth_rasterized.tif`
 - Supplementary Datasets
   - Building Footprint GIS Shapefile: `data/<event>/building_footprint/<event>_building_footprint.zip`
-  - Landslide Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_landslide_ground_truth.zip`
-  - Liquefaction Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_liquefaction_ground_truth.zip`
-  - Building Damage Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_building_damage_ground_truth.zip`
-
-
 
 
 ## Code
@@ -98,7 +93,7 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │       SVI.m
 │   │       Tfxn.m
 │   │       updating.m
-│   │
+│   │       
 │   └───performance
 │           binaryerror.m
 │           cel.m
@@ -109,21 +104,19 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   ├───2016_central_italy
 │   │   ├───building_damage_model
 │   │   │       2016_central_italy_building_damage_model.tif
-│   │   │
+│   │   │       
 │   │   ├───building_footprint
 │   │   │       2016_central_italy_building_footprint.zip
 │   │   │       2016_central_italy_building_footprint_rasterized.tif
-│   │   │
+│   │   │       
 │   │   ├───ground_truth
-│   │   │       2016_central_italy_building_damage_ground_truth.zip
 │   │   │       2016_central_italy_building_damage_ground_truth_rasterized.tif
-│   │   │       2016_central_italy_landslide_ground_truth.zip
 │   │   │       2016_central_italy_landslide_ground_truth_rasterized.tif
-│   │   │
+│   │   │       
 │   │   ├───posterior_models
 │   │   │       2016_central_italy_posterior_landslide_model.tif
 │   │   │       2016_central_italy_posterior_liquefaction_model.tif
-│   │   │
+│   │   │       
 │   │   └───prior_models
 │   │           2016_central_italy_prior_landslide_model.tif
 │   │           2016_central_italy_prior_liquefaction_model.tif
@@ -137,7 +130,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2018_hokkaido_japan_30m_building_footprint_rasterized.tif
 │   │   │
 │   │   ├───ground_truth
-│   │   │       2018_hokkaido_japan_30m_landslide_ground_truth.zip
 │   │   │       2018_hokkaido_japan_30m_landslide_ground_truth_rasterized.tif
 │   │   │
 │   │   ├───posterior_models
@@ -157,7 +149,6 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2018_hokkaido_japan_5m_building_footprint_rasterized.tif
 │   │   │
 │   │   ├───ground_truth
-│   │   │       2018_hokkaido_japan_5m_landslide_ground_truth.zip
 │   │   │       2018_hokkaido_japan_5m_landslide_ground_truth_rasterized.tif
 │   │   │
 │   │   ├───posterior_models
@@ -177,11 +168,8 @@ Using the ROC curve, we show that our model significantly improves the current l
 │   │   │       2019_ridgecrest_building_footprint_rasterized.tif
 │   │   │
 │   │   ├───ground_truth
-│   │   │       2019_ridgecrest_building_damage_ground_truth.zip
 │   │   │       2019_ridgecrest_building_damage_ground_truth_rasterized.tif
-│   │   │       2019_ridgecrest_landslide_ground_truth.zip
 │   │   │       2019_ridgecrest_landslide_ground_truth_rasterized.tif
-│   │   │       2019_ridgecrest_liquefaction_ground_truth.zip
 │   │   │       2019_ridgecrest_liquefaction_ground_truth_rasterized.tif
 │   │   │
 │   │   ├───posterior_models
@@ -204,13 +192,8 @@ Using the ROC curve, we show that our model significantly improves the current l
 │       │       2020_puerto_rico_damage_proxy_map.tif
 │       │
 │       ├───ground_truth
-│       │       2020_puerto_rico_building_damage_ground_truth.zip
 │       │       2020_puerto_rico_building_damage_ground_truth_rasterized.tif
-│       │       2020_puerto_rico_landslide_ground_truth_part1.zip
-│       │       2020_puerto_rico_landslide_ground_truth_part2.zip
-│       │       2020_puerto_rico_landslide_ground_truth_part3.zip
 │       │       2020_puerto_rico_landslide_ground_truth_rasterized.tif
-│       │       2020_puerto_rico_liquefaction_ground_truth.zip
 │       │       2020_puerto_rico_liquefaction_ground_truth_rasterized.tif
 │       │
 │       ├───posterior_models
