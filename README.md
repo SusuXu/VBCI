@@ -1,8 +1,12 @@
-# Variational Causal Bayesian Inference for Seismic Multi-hazard Estimation from Satellite Images
-This is the code for "Seismic Multi-hazard Estimation via Causal Inference from Satellite Imagery".
+# Variational Causal Bayesian Inference for Seismic Multi-hazard and Impact Estimation from Satellite Images
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7319726.svg)](https://doi.org/10.5281/zenodo.7319726) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+
+This is the code for "Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery".
 
 ## Install
-This code depends on Matlab and QGIS.
+This code depends on MALTAB R2022a, QGIS 3.22.2-Białowieża, and any newer versions.
 
 ## Get started
 To get started, cd into the directory. Download and store the DPM(DPM.tif), building footprint(BD.tif), prior landslide(PLS.tif), and prior liquefaction(PLF.tif) to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than DPM, so it is necessary to discretize the prior estimations to make the map size the same as the DPMs (though the resolution stays low).
