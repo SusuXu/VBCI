@@ -287,4 +287,5 @@ We test the performance of our system on multiple earthquake events, including t
 ```
 
 ## Acknowledgements
-This project is supported by USGS, Stony Brook University, and Stanford Unviersity. 
+Any use of trade, firm, or product names is for descriptive purposes only and does not
+697 imply endorsement by the U.S. Government. S.X. was supported by USGS Earthquake Hazards Program 698 G22AP00032. J.D. was supported by the Stanford Knight-Hennessy Scholars Program. This project is supported by U.S. Geological Survey, Stony Brook University, and Stanford Unviersity.  
