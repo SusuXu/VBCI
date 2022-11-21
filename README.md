@@ -42,9 +42,17 @@ We have made all the post-processed inputs and outputs available inside the `dat
 ## Code
 
 The main codes located under the directory of method.
-`updating.m` is the main function to optimize the causal Bayesian inference. In the `updating.m`, "location" refers to the directory storing DPM, building footprint(BD.tif), prior landslide(PLS.tif), and prior liquefaction(PLF.tif). In `updating.m`: 
+`updating.m` is the main function to optimize the causal Bayesian inference. In the `updating.m`, "location" refers to the directory storing damage proxy map (DPM), building footprint (BD), prior landslide (PLS), and prior liquefaction (PLF). In `updating.m`: 
 * `prune_type` represents the type of pruning the original causal graph to accelerate the computing. "double" refers to symmetric pruning where given a location, prune one node from LS and LF if the absolute difference between prior LS and LF is larger than a given threshold specified by sigma (which is often set as 0 or median of the difference). "single" refers to an asymmetric pruning where given a location, prune LF node if LS is larger than LF+sigma and prune LS if LF is larger than LS, or the opposite case. 
 * `sigma` refers to pruning threshold to retain only one node from LS and LF in the locations where prior models are very sure that only one of the hazards exist. If you are confident with the prior model, you can set sigma as 0, otherwise we will recommend to try median or mean of the absolute differences. 
+
+    | Events  | `sigma` |
+    | ------------- | ------------- |
+    | 2016 Central Italy earthquake  | zero  |
+    | 2018 Hokkaido earthquake  | median  |
+    | 2019 Ridgecrest earthquake  | median  |
+    | 2020 Puerto Rico earthquake  | zero  |
+
 * `lambda` and `regu_type` refer to the regularization term. `regu_type == 1` refers to that the model will rely more on DPM, `regu_type == 2` refers to that the model will rely more on the prior model. lambda control the levels of regularization, higher means more strongly restricting the impacts of DPM (`regu_type==2`) or prior model(`regu_type==1`). We recommend to setup lambda as 0 if you do not have any prior understanding about the confidence level of DPM and prior models.
 * `rho` is the learning rate for optimization, `delta` is the aceptable tolerance level for convergence. `eps_0` is a small number to get rid of negative entropy. 
 * `Nq` is the number of posterior probability iterations at each location in each epoch. We often set it as 10.
