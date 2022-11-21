@@ -16,16 +16,25 @@ Download and store the input raster TIF files for damage proxy map, building foo
   - 2019_ridgecrest, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/ci38457511)
   - 2020_puerto_rico, [USGS Event Page](https://earthquake.usgs.gov/earthquakes/eventpage/us70006vll)
 
-We have made all the post-processed inputs and outputs available inside the `data` folder. Each earthquake event has the following sub-folders:
+We have made all the post-processed inputs and outputs available inside the `data` folder. Each earthquake event has the following datasets:
 - Input Data
-  - `data/<event>/prior models`
-  - `data/<event>/damage_proxy_map`
-  - `data/<event>/building_footprint`
+  - PLS: `data/<event>/prior_models/<event>_prior_landslide_model.tif`
+  - PLF: `data/<event>/prior_models/<event>_prior_liquefaction_model.tif`
+  - BD: `data/<event>/building_footprint/<event>_building_footprint_rasterized.tif`
+  - DPM: `data/<event>/damage_proxy_map/<event>_damage_proxy_map.tif`
 - Output Data
-  - `data/<event>/posterior_models`
-  - `data/<event>/building_damage_model`
+  - QLS: `data/<event>/posterior_models`
+  - QLS: `data/<event>/posterior_models`
+  - QBD: `data/<event>/building_damage_model`
 - Validation or Performance Assessment
-  - `data/<event>/ground_truth`
+  - GTLS: `data/<event>/ground_truth/<event>_landslide_ground_truth_rasterized.tif`
+  - GTLF: `data/<event>/ground_truth/<event>_liquefaction_ground_truth_rasterized.tif`
+  - GTBD: `data/<event>/ground_truth/<event>_building_damage_ground_truth_rasterized.tif`
+- Supplementary Datasets
+  - Building Footprint GIS Shapefile: `data/<event>/building_footprint/<event>_building_footprint.zip`
+  - Landslide Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_landslide_ground_truth.zip`
+  - Liquefaction Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_liquefaction_ground_truth.zip`
+  - Building Damage Ground Truth GIS Shapefile: `data/<event>/ground_truth/<event>_building_damage_ground_truth.zip`
 
 
 
