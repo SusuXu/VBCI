@@ -2,14 +2,16 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7319726.svg)](https://doi.org/10.5281/zenodo.7319726) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
+This GitHub repository contains the code, data, and figures for the Nature Communications paper [_Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery_](https://github.com/SusuXu/VBCI). If you have any questions, please contact [susu.xu@stonybrook.edu](mailto:susu.xu@stonybrook.edu).
 
-This is the code for "Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery".
-
-## Install
+## Installation
 This code depends on MALTAB R2022a, QGIS 3.22.2-Białowieża, and any newer versions.
 
-## Get started
-To get started, cd into the directory. Download and store the DPM(DPM.tif), building footprint(BD.tif), prior landslide(PLS.tif), and prior liquefaction(PLF.tif) to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than DPM, so it is necessary to discretize the prior estimations to make the map size the same as the DPMs (though the resolution stays low).
+## Data
+To get started, cd into the directory. Download and store the raster TIF files for damage proxy map, building footprint, prior landslide model, and prior liquefaction model to local directory. Please make sure that they have consistent size and dimension. In most cases, prior models have much lower resolutions than damage proxy map, so it is necessary to discretize the prior estimations to make the map size the same as the damage proxy maps (though the resolution stays low).
+
+
+## Code
 
 The main codes locate under the directory of method.
 updating.m is the main function to optimize the causal Bayesian inference. In the updating.m, "location" refers to the directory storing DPM, building footprint(BD.tif), prior landslide(PLS.tif), and prior liquefaction(PLF.tif). In updating.m: 
@@ -18,10 +20,8 @@ updating.m is the main function to optimize the causal Bayesian inference. In th
 * lambda and regu_type refer to the regularization term. regu_type == 1 refers to that the model will rely more on DPM, regu_type == 2 refers to that the model will rely more on the prior model. lambda control the levels of regularization, higher means more strongly restricting the impacts of DPM (regu_type==2) or prior model(regu_type==1). We recommend to setup lambda as 0 if you do not have any prior understanding about the confidence level of DPM and prior models.
 * rho is the learning rate for optimization, delta is the aceptable tolerance level for convergence. eps_0 is a small number to get rid of negative entropy. 
 * Nq is the number of posterior probability iterations at each location in each epoch. We often set it as 10.
-
-SVI.m is the stochastic variational inference process which optimizes the posterior and weights. 
-
-performance.m refers to the evaluation metric, including true positive rate, false positive rate, ROC, DET, PR, and AUC calculation. 
+* SVI.m is the stochastic variational inference process which optimizes the posterior and weights. 
+* performance.m refers to the evaluation metric, including true positive rate, false positive rate, ROC, DET, PR, and AUC calculation. 
 
 ## Results
 The results are automatically saved in the location specified by 'filename' in updating.m. final_QLS, final_QLF are the landslide, liquefaction estimation by our model, respectively. opt_QBD is the building damage (BD) estiamtion by our model. local is the finally updated pruning strategy, local = 1,3 represent only LS or LS+BD, local = 2,4 refer to only LF or LF+BD, local = 5 refers to LS+LF, local=6 refers to LS+LF+BD. If you are very sure about the mutual exclusive between LS and LF at some locations, you can incorporate that in the original pruning strategies (prune.m).
@@ -32,7 +32,7 @@ The system is built based on the causal graph depicting the physical interdepend
 </p>
 
 
-### the 2018 Hokkaido Earthquake
+### 2018 Hokkaido Earthquake
 
 <p align="center">
     <img src="figures/hokkaido_roc.jpg" width="400"\>
@@ -40,9 +40,5 @@ The system is built based on the causal graph depicting the physical interdepend
 
 We test the performance of our system on multiple earthquake events, including the 2018 Hokkaido earthquake, 2016 Central Italy earthquake, the 2019 Ridgecrest earthquake, and the 2020 Puerto Rico earthquake. We here show a comparison between our prediction results and existing USGS landslide model for landslide in Hokkaido. 
 
-
-## Contact
-Please contact susu.xu@stonybrook.edu if you have any question on the codes.
-
-## Disclamer
+### Acknowledgements
 This project is supported by USGS, Stony Brook University, and Stanford Unviersity. 
