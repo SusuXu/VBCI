@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7319726.svg)](https://doi.org/10.5281/zenodo.7319726) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-This GitHub repository contains the code, data, and figures for the Nature Communications paper [_Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery_](https://github.com/SusuXu/VBCI). If you have any questions, please contact [susu.xu@stonybrook.edu](mailto:susu.xu@stonybrook.edu).
+This GitHub repository contains the code, data, and figures for the Nature Communications paper [_Seismic Multi-hazard and Impact Estimation via Causal Inference from Satellite Imagery_](https://doi.org/10.1038/s41467-022-35418-8). If you have any questions, please contact [susu.xu@stonybrook.edu](mailto:susu.xu@stonybrook.edu).
 
 ## Installation
 This code depends on [MALTAB R2022a](https://uk.mathworks.com/), [QGIS 3.22.2-Białowieża](https://www.qgis.org/en/site/forusers/download.html), or any newer versions. The [MATLAB Mapping Toolbox](https://uk.mathworks.com/products/mapping.html) must also be installed to enable the data import and export of GeoTIFF files (*.tif).
